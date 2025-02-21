@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    gsap.from(".navbar", { opacity: 0, y: -20, duration: 1, ease: "power2.out" });
+    // gsap.from(".navbar", { opacity: 0, y: -20, duration: 1, ease: "power2.out" });
 });
 
 //   coomon section gsap
