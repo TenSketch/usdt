@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate us - Uravugal Sustainable Development Trust - Empowering Women, Educating Communities, Transforming Lives</title>
+    <title>Donate us - Uravugal Sustainable Development Trust - Empowering Women, Educating Communities, Transforming
+        Lives</title>
     <meta name="description"
         content="USDT is dedicated to empowering marginalized women, educating communities, and fostering sustainable development. Join us in creating a society without discrimination and building brighter futures.">
     <meta name="keywords"
@@ -60,7 +61,7 @@
                     <!-- <li class="nav-item"><a class="nav-link" href="impact.html">Impact</a></li> -->
                     <!-- <li class="nav-item"><a class="nav-link" href="get-involved.html">Get Involved</a></li> -->
                     <li class="nav-item">
-                        <a class="btn btn-primary donate-btn d-none" href="donate.html">Donate 💙</a>
+                        <a class="btn btn-primary donate-btn" href="donate.html">Donate 💙</a>
                     </li>
                 </ul>
             </div>
@@ -68,7 +69,7 @@
     </nav>
 
     <!-- Donate Page -->
-<section class="donate-section">
+    <!-- <section class="donate-section">
     <div class="container">
       <h1>Make a Difference – Donate Today</h1>
       <p>Your contribution helps empower women and children through education, entrepreneurship, and community support.</p>
@@ -76,9 +77,103 @@
 
       <p class="tax-note">All donations are tax-exempt under 80G of the Income Tax Act.</p>
     </div>
-  </section>
-  
-  
+  </section> -->
+    <!-- Donation Page -->
+    <section class="donate-form-section py-5 ">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <!-- Left: Image -->
+                <div class="col-md-6 text-center">
+                    <img src="assets/images/donation-img.jpg" alt="Donate to Support" class="img-fluid donate-img">
+                </div>
+
+                <!-- Right: Form -->
+                <div class="col-md-6 mt-4 mt-md-0">
+                    <div class="card shadow-lg p-4">
+                        <div class="card-body">
+                            <h2 class="text-primary text-center">Make a Difference – Donate Now</h2>
+                            <p class="text-muted text-center">Your details are secure and used only for tax exemptions
+                                under our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+
+                            <form id="donationForm" name="Donation"  method="POST" novalidate netlify>
+                                <!-- Name -->
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="donorName" name="donor_name"
+                                        placeholder="Full Name" required minlength="3" maxlength="50">
+                                    <label for="donorName">Full Name <span class="text-danger">*</span></label>
+                                    <div class="invalid-feedback">Please enter a valid name (3-50 characters).</div>
+                                </div>
+
+                                <!-- Mobile Number -->
+                                <div class="form-floating mb-3">
+                                    <input type="tel" class="form-control" id="donorMobile" name="donor_mobile"
+                                        placeholder="Mobile Number" required pattern="[6-9]\d{9}" maxlength="10">
+                                    <label for="donorMobile">Mobile Number <span class="text-danger">*</span></label>
+                                    <div class="invalid-feedback">Enter a valid 10-digit mobile number.</div>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="donorEmail" name="donor_email"
+                                        placeholder="Email Address" required>
+                                    <label for="donorEmail">Email Address <span class="text-danger">*</span></label>
+                                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                                </div>
+
+                                <!-- Aadhar Number -->
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="donorAadhar" name="donor_aadhar"
+                                        placeholder="Aadhar Number" required pattern="\d{12}" maxlength="12">
+                                    <label for="donorAadhar">Aadhar Number (For Tax Exemptions) <span
+                                            class="text-danger">*</span></label>
+                                    <div class="invalid-feedback">Enter a valid 12-digit Aadhar number.</div>
+                                    <small class="form-text text-muted">Your Aadhar is required for tax benefits and
+                                        remains confidential.</small>
+                                </div>
+
+                                <!-- PAN Number -->
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="donorPan" name="donor_pan"
+                                        placeholder="PAN Number" required pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}"
+                                        maxlength="10">
+                                    <label for="donorPan">PAN Number (For Tax Exemptions) <span
+                                            class="text-danger">*</span></label>
+                                    <div class="invalid-feedback">Enter a valid PAN number (Format: ABCDE1234F).</div>
+                                    <small class="form-text text-muted">Your PAN is required for issuing 80G tax
+                                        exemption certificates.</small>
+                                </div>
+
+                                <!-- Donation Amount -->
+                                <div class="form-floating mb-3">
+                                    <input type="number" class="form-control" id="donationAmount" name="donation_amount"
+                                        placeholder="Donation Amount" required min="100" max="1000000">
+                                    <label for="donationAmount">Donation Amount (INR) <span
+                                            class="text-danger">*</span></label>
+                                    <div class="invalid-feedback">Please enter an amount between ₹100 - ₹10,00,000.
+                                    </div>
+                                </div>
+
+                                <!-- Message (Optional) -->
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" id="donorMessage" name="donor_message"
+                                        placeholder="Leave a message (optional)" rows="3"></textarea>
+                                    <label for="donorMessage">Message (Optional)</label>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary w-100">Proceed to Donate</button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">

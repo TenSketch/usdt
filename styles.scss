@@ -473,7 +473,7 @@ body {
 .contact-section {
     background: $secondary-color;
     padding: 80px 20px;
-    text-align: center;
+    // text-align: center;
   
     h1 {
       color: $primary-color;
@@ -545,47 +545,90 @@ body {
 
   
 //   donate
-.donate-section {
+// .donate-section {
+//     background: $secondary-color;
+//     padding: 80px 20px;
+//     text-align: center;
+  
+//     h1 {
+//       color: $primary-color;
+//       font-size: 2.5rem;
+//       margin-bottom: 15px;
+//     }
+  
+
+  
+//     .tax-note {
+//       font-size: 1rem;
+//       color: $text-color;
+//       margin-top: 15px;
+//     }
+
+//     .donate-btn {
+//         background: $primary-color;
+//         color: #fff;
+//         padding: 12px 20px;
+//         font-size: 1.2rem;
+//         font-weight: 600;
+//         border-radius: 5px;
+//         display: inline-block;
+//         text-align: center;
+//         transition: all 0.3s ease;
+      
+//         &:hover {
+//           background: darken($primary-color, 10%);
+//           transform: translateY(-2px);
+//         }
+//       }
+      
+//   }
+  
+
+.donate-form-section {
     background: $secondary-color;
     padding: 80px 20px;
-    text-align: center;
   
-    h1 {
-      color: $primary-color;
-      font-size: 2.5rem;
-      margin-bottom: 15px;
+    .donate-img {
+      max-width: 80%;
+      border-radius: 10px;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     }
   
-
-  
-    .tax-note {
-      font-size: 1rem;
-      color: $text-color;
-      margin-top: 15px;
+    .card {
+      border-radius: 10px;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     }
-
-    .donate-btn {
-        background: $primary-color;
-        color: #fff;
-        padding: 12px 20px;
-        font-size: 1.2rem;
-        font-weight: 600;
-        border-radius: 5px;
-        display: inline-block;
-        text-align: center;
-        transition: all 0.3s ease;
-      
-        &:hover {
-          background: darken($primary-color, 10%);
-          transform: translateY(-2px);
-        }
+  
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+  
+    .form-control {
+      border-radius: 5px;
+      padding: 15px;
+      &:focus {
+        border-color: $primary-color;
+        box-shadow: 0px 0px 5px rgba(0, 51, 154, 0.3);
       }
-      
+    }
+  
+    .btn-primary {
+      font-size: 1.2rem;
+      padding: 12px;
+      margin-top: 10px;
+    }
   }
   
+  .form-floating input.filled + label,
+.form-floating textarea.filled + label {
+  opacity: 1 !important;
+  transform: scale(0.85) translateY(-1.2rem) translateX(0);
+}
 
 
-//   thank-you page
+
 
 
 .whatsapp-float {
