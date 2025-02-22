@@ -95,8 +95,13 @@
                             <p class="text-muted text-center">Your details are secure and used only for tax exemptions
                                 under our <a href="privacy-policy.html">Privacy Policy</a>.</p>
 
-                            <form id="donationForm" name="Donation" method="POST" novalidate netlify>
+                            <form id="donationForm" name="Donation" method="POST" novalidate  netlify-honeypot="bot-field" data-netlify="true">
                                 <!-- Name -->
+                                <p class="hidden">
+                                    <label>
+                                      Don’t fill this out if you’re human: <input name="bot-field" />
+                                    </label>
+                                  </p>
                                 <div class="form-floating mb-3">
                                     <input type="text" class="form-control" id="donorName" name="donor_name"
                                         placeholder="Full Name" required minlength="3" maxlength="50">
