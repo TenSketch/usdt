@@ -144,3 +144,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   
+  function convertToUppercase(input) {
+    input.value = input.value.toUpperCase();
+}
