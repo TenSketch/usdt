@@ -44,6 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
   
     // Prevent form submission if validation fails
     form.addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent default form submission (Fixes 405 Error)
+
       let isValid = true;
   
       inputs.forEach(input => {
@@ -58,6 +60,16 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   
       form.classList.add("was-validated");
+      if (isValid) {
+        // Show the Bootstrap modal
+        let thankYouModal = new bootstrap.Modal(document.getElementById("thankYouModal"));
+        thankYouModal.show();
+
+        // Optionally reset the form
+        form.reset();
+        inputs.forEach(input => input.classList.remove("is-valid"));
+    }
+      
     });
   
     // Function to validate individual fields
