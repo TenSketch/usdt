@@ -117,7 +117,7 @@
 
                 <!-- Contact Form -->
                 <div class="col-lg-6">
-                    <form class="contact-form" id="contact" name="Contact" method="POST" netlify>
+                    <form class="contact-form" id="contact" name="Contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
 
                         <div class="form-group">
                             <label for="name">Your Name</label>
@@ -134,6 +134,7 @@
                             <textarea id="message" class="form-control" rows="4" placeholder="Type your message"
                                 required></textarea>
                         </div>
+                        <div data-netlify-recaptcha="true"></div>
 
                         <button type="submit" class="btn-primary">Send Message</button>
                     </form>
